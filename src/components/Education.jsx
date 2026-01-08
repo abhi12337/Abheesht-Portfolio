@@ -16,7 +16,7 @@ export default function Education() {
       field: 'Computer Engineering',
       institution: 'National Institute of Technology (NIT) Kurukshetra',
       location: 'Kurukshetra, India',
-      period: '2021 - 2023',
+      period: '2022 - 2024',
       icon: FaGraduationCap
     },
     {
@@ -24,7 +24,7 @@ export default function Education() {
       field: 'Computer Science & Engineering',
       institution: 'NSUT West Campus (Netaji Subhas University of Technology)',
       location: 'Delhi, India',
-      period: '2016 - 2020',
+      period: '2017 - 2021',
       icon: FaUniversity
     }
   ];
