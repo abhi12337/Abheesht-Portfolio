@@ -1,0 +1,150 @@
+.experience {
+  padding: 100px 20px;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  width: calc(50% - 40px);
+}
+
+.timeline-item:nth-child(odd) {
+  margin-left: 0;
+  margin-right: auto;
+  padding-right: 40px;
+}
+
+.timeline-item:nth-child(even) {
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+.timeline-content {
+  padding: 30px;
+  position: relative;
+}
+
+.timeline-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  top: 30px;
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
+.timeline-item:nth-child(odd) .timeline-icon {
+  right: -65px;
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+  left: -65px;
+}
+
+.timeline-header h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.timeline-header h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.timeline-meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #a8a8b3;
+}
+
+.timeline-period,
+.timeline-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.timeline-achievements {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-achievements li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #c4c4cc;
+}
+
+.timeline-achievements li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .timeline::before {
+    left: 25px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 80px !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .timeline-item .timeline-icon {
+    left: 0 !important;
+    right: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-header h3 {
+    font-size: 20px;
+  }
+
+  .timeline-header h4 {
+    font-size: 18px;
+  }
+
+  .timeline-meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .timeline-achievements li {
+    font-size: 14px;
+  }
+}
