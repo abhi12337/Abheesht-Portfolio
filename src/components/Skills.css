@@ -54,9 +54,17 @@
 }
 
 @media (max-width: 768px) {
+  .skills {
+    padding: 60px 15px;
+  }
+
   .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+  }
+
+  .skill-card {
+    padding: 30px 20px;
   }
 
   .skill-icon {
@@ -65,5 +73,34 @@
 
   .skill-card h3 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 40px 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skill-card {
+    padding: 25px 15px;
+  }
+
+  .skill-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .skill-level {
+    font-size: 13px;
   }
 }

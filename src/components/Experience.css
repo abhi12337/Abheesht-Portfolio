@@ -131,6 +131,22 @@
 }
 
 @media (max-width: 768px) {
+  .experience {
+    padding: 60px 15px;
+  }
+
+  .timeline-item {
+    padding-left: 70px !important;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-content {
+    padding: 25px 20px;
+  }
+
   .timeline-header h3 {
     font-size: 20px;
   }
@@ -146,5 +162,50 @@
 
   .timeline-achievements li {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 40px 10px;
+  }
+
+  .timeline-item {
+    padding-left: 60px !important;
+    margin-bottom: 30px;
+  }
+
+  .timeline::before {
+    left: 15px;
+    width: 3px;
+  }
+
+  .timeline-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    left: -5px !important;
+  }
+
+  .timeline-content {
+    padding: 20px 15px;
+  }
+
+  .timeline-header h3 {
+    font-size: 18px;
+  }
+
+  .timeline-header h4 {
+    font-size: 16px;
+  }
+
+  .timeline-meta {
+    font-size: 13px;
+  }
+
+  .timeline-achievements li {
+    font-size: 13px;
+    padding-left: 20px;
+    margin-bottom: 10px;
   }
 }

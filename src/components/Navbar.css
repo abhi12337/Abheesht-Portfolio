@@ -66,6 +66,18 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .nav-container {
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
   .nav-menu {
     gap: 20px;
   }
@@ -73,8 +85,26 @@
   .nav-menu a {
     font-size: 14px;
   }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 0;
+  }
 
   .nav-container {
-    padding: 0 20px;
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    gap: 12px;
+  }
+
+  .nav-menu a {
+    font-size: 12px;
   }
 }

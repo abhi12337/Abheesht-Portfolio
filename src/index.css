@@ -95,6 +95,42 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
+@media (max-width: 768px) {
+  .btn {
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  section {
+    padding: 40px 10px;
+    min-height: auto;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+}
+
 .btn-primary {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;

@@ -5,7 +5,7 @@
 
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -67,19 +67,25 @@
 }
 
 @media (max-width: 768px) {
+  .education {
+    padding: 60px 15px;
+  }
+
   .education-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 25px;
   }
 
   .education-card {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 30px 20px;
   }
 
   .education-icon {
     font-size: 48px;
+    padding: 15px;
   }
 
   .education-content h3 {
@@ -88,5 +94,44 @@
 
   .education-content h4 {
     font-size: 18px;
+  }
+
+  .institution {
+    font-size: 15px;
+  }
+
+  .education-meta {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .education {
+    padding: 40px 10px;
+  }
+
+  .education-card {
+    padding: 25px 15px;
+  }
+
+  .education-icon {
+    font-size: 40px;
+    padding: 12px;
+  }
+
+  .education-content h3 {
+    font-size: 18px;
+  }
+
+  .education-content h4 {
+    font-size: 16px;
+  }
+
+  .institution {
+    font-size: 14px;
+  }
+
+  .education-meta {
+    font-size: 12px;
   }
 }
